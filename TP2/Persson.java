@@ -1,4 +1,4 @@
-public class Persson {
+public class Person {
     String name;
     String Firstname;
     int daynaiss;
@@ -22,11 +22,15 @@ public class Persson {
 
     }
     public static void main(String[] args){
-        Persson p1=new Persson();
+        Person p1=new Person();
         p1.setname("jasser");
         p1.setFirstName("jlassi");
-        p1.datenaiss(12,2,2001);
-        System.out.println(p1.AgeEn2023());
+        p1.datenaiss(5,1,2004);
+
+        System.out.println("name : "+p1.name);
+        System.out.println("name : "+p1.Firstname);
+        System.out.println("date de naissance : "+p1.daynaiss+"/"+p1.monthnaiss+"/"+p1.yearnaiss);
+        System.out.println("age : "+p1.AgeEn2023());
     }
 
 }
